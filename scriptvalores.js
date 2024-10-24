@@ -10,7 +10,7 @@ document.getElementById("calcularBotao").addEventListener("click", function() {
         if (service === "daycare") {
             basePrice = porte === "pequeno" ? 80 : porte === "medio" ? 90 : 110;
         } else if (service === "hospedagem") {
-            basePrice = porte === "pequeno" ? 90 : porte === "medio" ? 120 : 150;
+            basePrice = porte === "pequeno" ? 70 : porte === "medio" ? 70 : 80;
         } else if (service === "recuperacao") {
             basePrice = porte === "pequeno" ? 200 : porte === "medio" ? 250 : 250;
         }
@@ -19,7 +19,7 @@ document.getElementById("calcularBotao").addEventListener("click", function() {
         let discountValue = totalValue;
 
         // Aplica desconto, se aplicável
-        if (dias > 5) {
+        if (dias > 10) {
             discountValue = totalValue * 0.9; // 10% de desconto
         }
 

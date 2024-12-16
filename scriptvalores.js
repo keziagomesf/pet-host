@@ -1,12 +1,13 @@
-document.getElementById("calcularBotao").addEventListener("click", function() {
+document.getElementById("calcularBotao").addEventListener("click", function () {
     const service = document.getElementById("service").value;
     const porte = document.getElementById("porte").value;
     const dias = parseInt(document.getElementById("dias").value);
 
-    if (service && porte && dias) {
+    if (service.length == 0 || porte.length == 0 || dias.length == 0) {
+        window.alert('[ERRO] Preencha todos os dados e verifique novamente!')
+    } else {
         let basePrice;
 
-        // Define o preço base com base no serviço e porte
         if (service === "daycare") {
             basePrice = porte === "pequeno" ? 80 : porte === "medio" ? 90 : 110;
         } else if (service === "hospedagem") {
@@ -18,14 +19,22 @@ document.getElementById("calcularBotao").addEventListener("click", function() {
         const totalValue = basePrice * dias;
         let discountValue = totalValue;
 
-        // Aplica desconto, se aplicável
+       
         if (dias > 10) {
-            discountValue = totalValue * 0.9; // 10% de desconto
+            discountValue = totalValue * 0.9; 
         }
 
-        // Exibe os resultados
+
         document.getElementById("totalValue").textContent = `Valor Total: R$ ${totalValue.toFixed(2)}`;
-        document.getElementById("discountValue").textContent = `Valor com Desconto: R$ ${discountValue.toFixed(2)}`;
+
+        if (dias > 10) {
+            document.getElementById("discountValue").textContent = `Valor com Desconto: R$ ${discountValue.toFixed(2)}`;
+        } else {
+        
+            document.getElementById("discountValue").textContent = '';
+        }
+
         document.getElementById("result").style.display = "block";
+    
     }
 });

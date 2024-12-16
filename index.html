@@ -4,65 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Pet Host</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Hotel para Cães</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <a href="index.html"><img src="imagens/logopet.png" alt="Logo Pet Host" id="logo"  ></a>
+        <div class="container">
+            <div class="logo">
+                <img src="imagens/logopet.png" alt="Logo do Hotel para Cães">
+                <span>Hotel para Cães</span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <a href="valores.html" class="btn">Simulação de Valores</a>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
     </header>
 
-    <nav>
-        <div class="opcoes">
-            <p><a href="quemsomos.html">Quem somos</a></p>
-            <p><a href="servicos.html">Serviços</a></p>
-            <p><a href="depoimentos.html">Depoimentos</a></p>
-            <p><a href="valores.html">Valores</a></p>
-            <p><a href="blog.html">Blog</a></p>
-            <p><a href="">Contato</a></p>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O melhor hotel para o seu melhor amigo!</h1>
+            <p>Conforto, segurança e cuidado exclusivo para o seu pet.</p>
+            <button onclick="scrollToSection('sobre')">Saiba Mais</button>
         </div>
-    </nav>
+    </section>
 
+    <section id="sobre" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos especialistas em cuidar do seu cão com atenção 24h, garantindo um ambiente seguro e acolhedor.</p>
+        <div class="features">
+            <div class="card">
+                <h3>🐕 Tutoria Exclusiva</h3>
+                <p>Cuidamos de um cão por vez para evitar estresse.</p>
+            </div>
+            <div class="card">
+                <h3>🛏️ Conforto Total</h3>
+                <p>Ambiente climatizado com muito carinho.</p>
+            </div>
+            <div class="card">
+                <h3>🔒 Segurança</h3>
+                <p>Monitoramento constante para o seu pet.</p>
+            </div>
+        </div>
+    </section>
 
-    <main>
+    <section id="depoimentos" class="testimonials">
+        <h2>O Que Nossos Clientes Dizem</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <img src="imagens/cliente1.jpeg" alt="Foto do cliente">
+                <p>"Meu cãozinho amou o hotel! Serviço incrível e muito carinho com os pets. Recomendo!"</p>
+                <h4>Maria Silva</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="imagens/cliente2.jpg" alt="Foto do cliente">
+                <p>"Confio 100% no Hotel para Cães! Meu cachorro volta sempre feliz e relaxado."</p>
+                <h4>João Pereira</h4>
+            </div>
+            <div class="testimonial-card">
+                <img src="imagens/cliente3.jpeg" alt="Foto do cliente">
+                <p>"O cuidado exclusivo faz toda a diferença. Lugar seguro e acolhedor!"</p>
+                <h4>Clara Oliveira</h4>
+            </div>
+        </div>
+    </section>
 
-        <section class="imagem1" id="img1">
-            <h1>Seu pet,
-                Nossa prioridade.</h1>
-        </section>
+    <section id="contato" class="contact">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
-        <section class="imagem2" id="img2">
-            <h1>Conforto, comodidade e segurança.</h1>
-            <!--Aqui explicar sobre hospedagem, daycare e cuidados pós cirurgícos-->
-        </section>
+    <footer>
+        <p>© 2024 Hotel para Cães. Todos os direitos reservados.</p>
+    </footer>
 
-        <section class="imagem3" id="img3">
-            <h3>Nosso compromisso é com você!</h3>
-            <h1>Pets felizes,
-                <br>
-                Humanos felizes!
-            </h1>
-            <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum eos magni ex voluptates, saepe culpa earum? Numquam magnam tempora qui ut pariatur eius, fugiat, velit voluptate modi, voluptatem inventore nostrum.
-            </p>
-        </section>
-
-        <section class="imagem4" id="img4">
-            <h1>Porque nos escolher?</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus vero reiciendis aperiam ea omnis minima ipsam, explicabo, deleniti a nemo incidunt esse eveniet amet? Magnam at blanditiis repellat ipsa quibusdam.</p>
-        </section>
-
-        <section class="depoimentos" id="dpmt">
-            <h1>Depoimento dos tutores</h1>
-        </section>
-
-        <section>
-            <h2>Localização</h2>
-            <h2>Contato</h2>
-        </section>
-    </main>
     <script src="script.js">
     </script>
     

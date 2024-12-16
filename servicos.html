@@ -3,49 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Host - Nossos Serviços</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Serviços - Hotel para Cães</title>
+    <link rel="stylesheet" href="styleservicos.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="imagens/logopet.png" alt="Logo Pet Host" id="logo"  ></a>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="imagens/logopet.png" alt="Logo do Hotel para Cães"></a>
+                <span>Hotel para Cães</span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                </ul>
+                <a href="valores.html" class="btn">Simulação de Valores</a>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+        </div>
     </header>
-    <div class="voltar">
-        <p><a href="index.html">Início   </a>   .   Serviços</p>
-    </div>
-    
-        <h2>Daycare</h2>
-        <p style="text-align: justify;">
-            Oferecemos um ambiente divertido e seguro para o seu amigo de quatro patas durante o dia. Com supervisão constante e atividades planejadas, garantimos que seu cão se exercite enquanto você está ocupado. <br>
-            Nossa creche é ideal para: <br>
-            - Animais que não podem ficar sozinhos em casa. <br>
-            - Tutores que trabalham fora e desejam um espaço seguro para seus pets. 
-        </p>
 
-        <h2>Hospedagem</h2>
-        <p style="text-align: justify;">
-            Na Pet Host, priorizamos a segurança e o bem-estar dos nossos hóspedes. Um dos nossos grandes diferenciais é que aceitamos apenas um tutor por vez, o que nos permite oferecer atenção personalizada e garantir um ambiente seguro. Nossos serviços de hospedagem incluem:
-        </p>
-        <p style="text-align: justify;">
-            <strong>Acomodações Confortáveis:</strong> Ambientes espaçosos e acolhedores para garantir uma estadia tranquila.
-        </p>
-        <p style="text-align: justify;">
-            <strong>Cuidados Personalizados:</strong> Atendemos às necessidades específicas de cada cão, incluindo alimentação, exercícios e brincadeiras.
-        </p>
-        <p style="text-align: justify;">
-            <strong>Segurança em Primeiro Lugar:</strong> Com apenas um tutor por vez, garantimos que seu animal se sinta seguro e amado durante a estadia.
-        </p>
-    <h2>Recuperação Pós-Cirúrgica</h2>
-    <p style="text-align: justify;">
-        Nosso compromisso com o bem-estar dos animais se estende ao cuidado pós-cirúrgico. Se seu cão passou por uma cirurgia, oferecemos um serviço especializado para ajudá-lo na recuperação:
-    </p>
-    <p style="text-align: justify;">
-        <strong>Cuidados com Curativos e Medicamentos:</strong> Garantimos que seu animal receba a medicação correta e que os curativos sejam trocados regularmente.
-    </p>
-    <p style="text-align: justify;">
-        <strong>Acompanhamento Individualizado:</strong> Seu cão pode ficar em nossa casa ou receber visitas regulares, conforme sua necessidade. Oferecemos um ambiente calmo e controlado para facilitar a recuperação.
-    </p>
-   
+    
+    <section class="page-title">
+        <h1>Nossos Serviços</h1>
+        <p>Conheça tudo o que oferecemos para o bem-estar do seu pet!</p>
+    </section>
+
+    
+    <section class="services">
+        <div class="service">
+            <img src="imagens/cachorro3.jpg" alt="Serviço de Daycare">
+            <h2>Daycare</h2>
+            <p>Seu cãozinho se diverte e socializa enquanto você cuida dos seus compromissos. Nossa equipe garante segurança e diversão o dia todo!</p>
+        </div>
+        <div class="service">
+            <img src="imagens/cachorro_5.jpg" alt="Serviço de Hospedagem">
+            <h2>Hospedagem</h2>
+            <p>Hospedagem confortável e segura para o seu pet. Oferecemos quartos amplos, brincadeiras diárias e cuidado 24 horas.</p>
+        </div>
+        <div class="service">
+            <img src="imagens/cachorrofeliz.png" alt="Recuperação Pós-Cirúrgica">
+            <h2>Recuperação Pós-Cirúrgica</h2>
+            <p>Assistência especializada para pets em recuperação. Monitoramento contínuo e conforto para uma recuperação tranquila.</p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Hotel para Cães - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js">
+    </script>
 </body>
 </html>

@@ -164,151 +164,87 @@ header .btn:hover {
     }
 }
 
-.hero {
-    height: 100vh;
-    background: linear-gradient(#f4f4f4, #979fb0), 
-                url('https://source.unsplash.com/1600x900/?dog,pet') center/cover;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.page-title {
+    background: orange;
+    color: white;
+    text-shadow: #555;
     text-align: center;
-    padding: 0 20px;
+    padding: 50px 10%; 
+    margin: 0; 
+    box-sizing: border-box; 
 }
-
-.hero h1 {
+.page-title h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-.hero button {
-    padding: 10px 20px;
-    background: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+.page-title p {
+    font-size: 1.2rem;
 }
 
-.hero button:hover {
-    background: darkorange;
+@media (max-width: 768px) {
+    .page-title {
+        padding: 30px 5%; 
+    }
+
+    .page-title h1 {
+        font-size: 2rem;
+    }
+
+    .page-title p {
+        font-size: 1rem;
+    }
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.service {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
 }
 
 section {
     padding: 50px 20px;
 }
 
-.about, .services {
-    text-align: center;
-}
-
-.about .features {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.testimonials {
-    background: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.testimonial-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.testimonial-card {
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: scale(1.05);
-}
-
-.testimonial-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid orange;
-}
-
-.testimonial-card p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.testimonial-card h4 {
-    font-size: 1.1rem;
-    color: #333;
-    font-weight: bold;
-}
-
-@media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 300px;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
-    margin: auto;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact button {
-    padding: 10px 20px;
-    background: orange;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 footer {
     text-align: center;
-    padding: 10px;
-    background: #979fb0;
+    background: #333;
     color: white;
+    padding: 15px;
+    font-size: 0.9rem;
 }
- 

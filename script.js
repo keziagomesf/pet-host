@@ -1,9 +1,9 @@
-function toggleMenu() {
+function alternarMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('active');
 }
 
-function scrollToSection(id) {
+function saibaMais(id) {
     const section = document.getElementById(id);
     if (section) {
         section.scrollIntoView({ behavior: "smooth" });

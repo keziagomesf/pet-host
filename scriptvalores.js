@@ -1,22 +1,22 @@
 document.getElementById("calcularBotao").addEventListener("click", function () {
-    const service = document.getElementById("service").value;
+    const servico = document.getElementById("service").value;
     const porte = document.getElementById("porte").value;
     const dias = parseInt(document.getElementById("dias").value);
 
-    if (service.length == 0 || porte.length == 0 || dias.length == 0) {
+    if (servico.length == 0 || porte.length == 0 || dias.length == 0) {
         window.alert('[ERRO] Preencha todos os dados e verifique novamente!')
     } else {
-        let basePrice;
+        let basePreco;
 
-        if (service === "daycare") {
-            basePrice = porte === "pequeno" ? 80 : porte === "medio" ? 90 : 110;
-        } else if (service === "hospedagem") {
-            basePrice = porte === "pequeno" ? 70 : porte === "medio" ? 70 : 80;
-        } else if (service === "recuperacao") {
-            basePrice = porte === "pequeno" ? 200 : porte === "medio" ? 250 : 250;
+        if (servico === "daycare") {
+            basePreco = porte === "pequeno" ? 80 : porte === "medio" ? 90 : 110;
+        } else if (servico === "hospedagem") {
+            basePreco = porte === "pequeno" ? 70 : porte === "medio" ? 70 : 80;
+        } else if (servico === "recuperacao") {
+            basePreco = porte === "pequeno" ? 200 : porte === "medio" ? 250 : 250;
         }
 
-        const totalValue = basePrice * dias;
+        const totalValue = basePreco * dias;
         let discountValue = totalValue;
 
        
